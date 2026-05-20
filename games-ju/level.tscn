@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cguxyj63bn634"]
+
+[ext_resource type="PackedScene" uid="uid://d155poxmf64mi" path="res://player.tscn" id="1_vonw3"]
+[ext_resource type="Texture2D" uid="uid://cmkg1hvxfknfv" path="res://assent/Base pack/Tiles/grassHalfMid.png" id="2_oi3di"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0b4ue"]
+size = Vector2(652, 33)
+
+[node name="level" type="Node2D" unique_id=461561775]
+position = Vector2(7, -5)
+
+[node name="Player" parent="." unique_id=1942558321 instance=ExtResource("1_vonw3")]
+position = Vector2(-15, 65)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=107354880]
+position = Vector2(-188, -45)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=2121230448]
+position = Vector2(151, 221)
+scale = Vector2(9.271428, 1)
+texture = ExtResource("2_oi3di")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1515979686]
+position = Vector2(141, 215)
+shape = SubResource("RectangleShape2D_0b4ue")

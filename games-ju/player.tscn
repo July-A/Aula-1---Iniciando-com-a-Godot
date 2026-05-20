@@ -11,10 +11,11 @@ height = 76.0
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=611028274]
+position = Vector2(3, -30)
 texture = ExtResource("2_i3pqv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=184584128]
-position = Vector2(0, -9)
+position = Vector2(1, -45)
 shape = SubResource("CapsuleShape2D_hqtel")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1574049595]
