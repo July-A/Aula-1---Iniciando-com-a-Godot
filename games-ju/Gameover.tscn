@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://c8a6avcudsb2n"]
+
+[ext_resource type="Texture2D" uid="uid://comfu3oxbau68" path="res://imagem.png" id="2_eowtm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3exob"]
+font_size = 73
+font_color = Color(0.076299004, 0.24509782, 0.3557151, 1)
+outline_size = 36
+
+[node name="Game Over" type="Control" unique_id=2066665259]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Game Backgroud" type="TextureRect" parent="." unique_id=1304458597]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Imagem" type="Sprite2D" parent="Game Backgroud" unique_id=123671083]
+position = Vector2(583.25, 320.99997)
+scale = Vector2(0.6803229, 0.6907545)
+texture = ExtResource("2_eowtm")
+
+[node name="Titulo do Jogo label" type="Label" parent="." unique_id=1305662992]
+layout_mode = 0
+offset_left = 379.0
+offset_top = 135.0
+offset_right = 767.0
+offset_bottom = 340.0
+text = "Blue Slime 
+Adventure"
+label_settings = SubResource("LabelSettings_3exob")
+
+[node name="Descrição do Jogo label" type="Label" parent="Titulo do Jogo label" unique_id=1072867689]
+layout_mode = 0
+offset_left = -93.0
+offset_top = 191.0
+offset_right = 557.0
+offset_bottom = 266.0
+pivot_offset = Vector2(-2, -6)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "Ajude a Blue a atravesar três fases e encotrar as 
+chaves que irã te liberar para novas conquistas."
+
+[node name="Iniciar Button" type="Button" parent="." unique_id=974707568]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 447.0
+offset_right = 781.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(0.76570874, 0.8947759, 0.99373275, 1)
+theme_override_colors/font_outline_color = Color(0.277668, 0.2864817, 0.627669, 1)
+theme_override_font_sizes/font_size = 58
+text = "Iniciar 
+"
+
+[connection signal="pressed" from="Iniciar Button" to="." method="_on_iniciar_button_pressed"]

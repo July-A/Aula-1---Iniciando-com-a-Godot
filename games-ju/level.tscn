@@ -38,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://cekkbp1v2d0xp" path="res://kenney_new-platformer-pack-1.1/Vector/Enemies/slime_spike_flat.svg" id="36_4wtct"]
 [ext_resource type="Texture2D" uid="uid://c57lp88bho4dm" path="res://kenney_new-platformer-pack-1.1/Vector/Tiles/flag_red_a.svg" id="37_dlbli"]
 [ext_resource type="Texture2D" uid="uid://cwy7j28w0nwwh" path="res://kenney_new-platformer-pack-1.1/Vector/Tiles/terrain_dirt_cloud_middle.svg" id="38_2hox4"]
+[ext_resource type="Script" uid="uid://4swy43t7c7lw" path="res://game_manager.gd" id="39_oaehd"]
 
 [sub_resource type="Gradient" id="Gradient_u52ul"]
 offsets = PackedFloat32Array(0, 0.3392857, 1)
@@ -275,3 +276,6 @@ texture = ExtResource("38_2hox4")
 [node name="BeeRest2" type="Sprite2D" parent="." unique_id=38070169]
 position = Vector2(2122, 570)
 texture = ExtResource("14_v5j5c")
+
+[node name="Game Manager" type="Node2D" parent="." unique_id=1703509682]
+script = ExtResource("39_oaehd")
